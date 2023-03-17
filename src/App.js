@@ -2,7 +2,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Gallery from "./pages/Gallery";
-import "./App.css";
+import "./css/App.css";
 import MyHeader from "./components/MyHeader";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
