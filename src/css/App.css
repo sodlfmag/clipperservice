@@ -47,6 +47,12 @@ header {
   margin-top: 70px;
   margin-left: 120px;
 }
+.PortfolioList {
+  margin-top: 70px;
+  margin-left: 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*포트폴리오 입력 사진 썸네일 사이즈를 446 X 446으로 가정*/
 .PortfolioElement {
