@@ -3,7 +3,7 @@ const MyHeader = () => {
     <header>
       <img
         className="Logo"
-        width="200px"
+        width="254px"
         src={process.env.PUBLIC_URL + `/assets/WhiteLogo.png`}
       />
       Portfolio Gallery Store Contact
