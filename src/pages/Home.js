@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <>
       <div>Home</div>
+      {ProgressBars()}
       <div className="VideoContainer">
         <video className="VisualizerVideo" loop autoplay="" muted>
           <source
