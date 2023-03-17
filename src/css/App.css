@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
 body {
-  padding: 20px;
+  margin-left: 20px;
   background-color: gray;
 }
 
@@ -38,7 +38,35 @@ header {
   font-family: "Questrial";
 }
 .PageTitle_introduction {
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 23px;
   color: white;
   font-family: "Questrial";
+}
+.PageBody {
+  margin-top: 70px;
+  margin-left: 120px;
+}
+
+/*포트폴리오 입력 사진 썸네일 사이즈를 446 X 446으로 가정*/
+.PortfolioElement {
+  max-width: 330px;
+  margin-left: 70px;
+}
+
+.PortfolioSub {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Questrial";
+  color: white;
+}
+.PortfolioName {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  font-family: "Questrial";
+  color: white;
 }
