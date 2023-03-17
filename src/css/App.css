@@ -76,3 +76,42 @@ header {
   font-family: "Questrial";
   color: white;
 }
+.BusinessCard {
+  background-color: #d9d9d9;
+  padding-bottom: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.LogoContainer {
+  text-align: center;
+}
+.CorpInfoContainer {
+  margin-left: 15%;
+  font-size: 20px;
+  font-family: "Questrial";
+}
+.CorpInfo {
+  margin-bottom: 20px;
+}
+.RequestButtonContainer {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+.RequestButton {
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+  font-size: 20px;
+  font-family: "Questrial";
+}
+.RequestButton:hover {
+  background-color: #b0b0b0;
+}
