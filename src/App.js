@@ -12,7 +12,6 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <MyHeader />
-        <h2>App.js</h2>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
