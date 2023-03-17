@@ -2,7 +2,10 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Gallery from "./pages/Gallery";
-import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     <BrowserRouter>
