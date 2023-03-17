@@ -1,9 +1,9 @@
 const TabButton = ({ name, path, onClick }) => {
   return (
-    <Button>
+    <button>
       {name}
       onClick={onClick({ path })}
-    </Button>
+    </button>
   );
 };
 
