@@ -8,7 +8,12 @@ const MyHeader = () => {
         width="254px"
         src={process.env.PUBLIC_URL + `/assets/WhiteLogo.png`}
       />
-      Portfolio Gallery Store Contact
+      <div className="TabList">
+        <TabButton name="Portfolio" path="/portfolio" />
+        <TabButton name="Gallery" path="/gallery" />
+        <TabButton name="Contact" path="/contact" />
+        <TabButton name="Store" path="/store" />
+      </div>
     </header>
   );
 };

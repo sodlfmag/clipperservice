@@ -1,9 +1,9 @@
-const TabButton = ({ name, path, onClick }) => {
+import { Link } from "react-router-dom";
+const TabButton = ({ name, path }) => {
   return (
-    <button>
+    <Link className="TabButton" to={path} style={{ textDecoration: "none" }}>
       {name}
-      onClick={onClick({ path })}
-    </button>
+    </Link>
   );
 };
 

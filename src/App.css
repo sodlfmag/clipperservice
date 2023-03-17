@@ -11,3 +11,15 @@ header {
   display: flex;
   font-family: "Questrial";
 }
+
+.TabButton {
+  padding: 50px;
+  width: 50px;
+}
+
+.TabList {
+  /* background-color: orange; */
+  margin-top: 75px;
+  margin-left: 25%;
+  height: 50px;
+}
