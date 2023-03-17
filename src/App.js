@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Gallery from "./pages/Gallery";
 import "./App.css";
+import MyHeader from "./components/MyHeader";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <MyHeader />
         <h2>App.js</h2>
         <Routes>
           <Route path="/" element={<Home />} />
