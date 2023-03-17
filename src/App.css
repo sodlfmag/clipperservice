@@ -2,7 +2,7 @@
 
 body {
   padding: 20px;
-  background-color: black;
+  background-color: gray;
 }
 
 header {
@@ -19,8 +19,16 @@ header {
 }
 
 .TabList {
-  /* background-color: orange; */
   margin-top: 75px;
   margin-left: 35%;
   height: 50px;
+}
+
+.VideoContainer {
+  text-align: center;
+}
+.VisualizerVideo {
+  width: 80%;
+  /* max-width: 100%; */
+  height: auto;
 }
