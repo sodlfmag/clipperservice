@@ -6,7 +6,7 @@ const MyHeader = () => {
         width="200px"
         src={process.env.PUBLIC_URL + `/assets/WhiteLogo.png`}
       />
-      This is header
+      Portfolio Gallery Store Contact
     </header>
   );
 };
