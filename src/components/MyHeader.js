@@ -12,10 +12,10 @@ const MyHeader = () => {
         />
       </NavLink>
       <div className="TabList">
-        <TabButton name="Portfolio" path="/portfolio" />
-        <TabButton name="Gallery" path="/gallery" />
-        <TabButton name="Contact" path="/contact" />
-        <TabButton name="Store" path="/store" />
+        <TabButton name="PORTFOLIO" path="/portfolio" />
+        <TabButton name="GALLERY" path="/gallery" />
+        <TabButton name="CONTACT" path="/contact" />
+        <TabButton name="STORE" path="/store" />
       </div>
     </header>
   );
