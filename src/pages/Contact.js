@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <>
@@ -25,7 +26,15 @@ const Contact = () => {
         </div>
       </div>
       <div className="RequestButtonContainer">
-        <button className="RequestButton">협업 문의하기</button>
+        <button className="RequestButton">
+          <Link
+            className="RequsetLink"
+            to="/contact/requestpage"
+            style={{ textDecoration: "none" }}
+          >
+            협업 문의하기
+          </Link>
+        </button>
       </div>
     </>
   );
