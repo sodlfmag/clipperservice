@@ -6,7 +6,7 @@ const MyHeader = () => {
     <header>
       <NavLink to={"/"}>
         <img
-          className="Logo"
+          className="LogoImage"
           width="254px"
           src={process.env.PUBLIC_URL + `/assets/WhiteLogo.png`}
         />

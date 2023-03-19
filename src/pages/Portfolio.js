@@ -1,4 +1,5 @@
 import React from "react";
+import MyFooter from "../components/MyFooter";
 
 import PageBody from "../components/PageBody";
 import PortfolioElement from "../components/PortfolioElement";
@@ -21,6 +22,7 @@ const Portfolio = () => {
           </>
         ))}
       </div>
+      {MyFooter()}
     </>
   );
 };
