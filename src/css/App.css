@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
 body {
-  background-color: gray;
+  background-color: black;
 }
 
 header {
@@ -145,3 +145,14 @@ header {
 .RequsetLink {
   color: black;
 }
+.RequestForm {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.RequestCategoryBtn {
+  background-color: #d9d9d9;
+  cursor: pointer;
+  border: none;
+  font-family: "Questrial";
+}
+@import "react-slideshow-image/dist/styles.css";

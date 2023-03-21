@@ -4,8 +4,6 @@
 const Home = () => {
   return (
     <>
-      <div>Home</div>
-
       <div className="VideoContainer">
         <video className="VisualizerVideo" loop autoplay="" muted>
           <source

@@ -1,6 +1,8 @@
+import RequestCategoryBtn from "./RequestCategoryBtn";
+
 const RequestForm = () => {
   return (
-    <div>
+    <div className="RequestForm">
       <div>
         <div>
           * 의뢰자명&nbsp;&nbsp;&nbsp;
@@ -14,11 +16,12 @@ const RequestForm = () => {
         </div>
         <div>
           * 문의 유형&nbsp;&nbsp;&nbsp;
-          <button>앨범 커버</button>
-          <button>머천다이즈</button>
-          <button>소품</button>
-          <button>콜라보</button>
-          <button>기타 문의</button>
+          <RequestCategoryBtn category="앨범 커버" />
+          <button className="RequestCategoryBtn">앨범 커버</button>
+          <button className="RequestCategoryBtn">머천다이즈</button>
+          <button className="RequestCategoryBtn">소품</button>
+          <button className="RequestCategoryBtn">콜라보</button>
+          <button className="RequestCategoryBtn">기타 문의</button>
         </div>
         <div>
           * 제목&nbsp;&nbsp;&nbsp;
