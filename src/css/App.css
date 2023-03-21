@@ -142,17 +142,78 @@ header {
   color: white;
   font-size: 16px;
 }
-.RequsetLink {
+.RequestLink {
   color: black;
 }
 .RequestForm {
-  margin-left: 20%;
+  margin-left: 25%;
   margin-right: 20%;
+  font-size: 15px;
+  color: white;
+  font-family: "Questrial";
 }
 .RequestCategoryBtn {
+  margin-top: 20px;
+  margin-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  border: none;
+  font-size: 12px;
+  font-family: "Questrial";
+}
+.RequestInput {
+  margin-top: 25px;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+.RequestInput_Requester {
+  width: 150px;
+}
+.RequestInput_Email_Address {
+  width: 200px;
+}
+.RequestInput_Phone_Number {
+  width: 150px;
+}
+.RequestInput_Title {
+  width: 60%;
+}
+.RequestInput_Contents {
+  width: 60%;
+  height: 350px;
+  resize: none;
+}
+.AttachmentBtn {
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
   background-color: #d9d9d9;
   cursor: pointer;
   border: none;
   font-family: "Questrial";
 }
+.SubmitBtn {
+  margin-left: 62%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  border: none;
+  font-size: 17px;
+  font-family: "Questrial";
+}
+
 @import "react-slideshow-image/dist/styles.css";

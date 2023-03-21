@@ -28,7 +28,7 @@ const Contact = () => {
       <div className="RequestButtonContainer">
         <button className="RequestButton">
           <Link
-            className="RequsetLink"
+            className="RequestLink"
             to="/contact/requestpage"
             style={{ textDecoration: "none" }}
           >
