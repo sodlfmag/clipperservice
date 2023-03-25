@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useEffect } from "react";
 import Portfolio from "./Portfolio";
 
@@ -50,7 +51,7 @@ function PortfolioPage() {
         style={{
           marginTop: 150,
           marginBottom: 150,
-          height: 1,
+          height: 0.8,
           background: "black",
         }}
       />
@@ -59,10 +60,16 @@ function PortfolioPage() {
         style={{
           marginTop: 150,
           marginBottom: 20,
-          height: 1,
+          height: 0.8,
           background: "black",
         }}
       />
+      <div style={{ textAlign: "right" }}>
+        <Link to="/portfolio" style={{ textDecoration: "none" }}>
+          <button className="PageControlBtn">목록으로</button>
+        </Link>
+        <button className="PageControlBtn">TOP</button>
+      </div>
     </div>
     // your PortfolioPage content here
   );

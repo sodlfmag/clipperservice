@@ -252,8 +252,22 @@ header {
 }
 .PortfolioPageBorder1 {
   margin-top: 150;
-  /* margin-bottom: 150;
+  margin-bottom: 150;
   height: 1;
-  background: black; */
+  background: black;
 }
+.PageControlBtn {
+  margin-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  font-family: "Questrial";
+}
+
 @import "react-slideshow-image/dist/styles.css";
