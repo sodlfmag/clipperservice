@@ -71,12 +71,30 @@ header {
   font-family: "Questrial";
   color: white;
 }
+.PortfolioPageSub {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Questrial";
+  color: black;
+}
 .PortfolioName {
   margin-top: 5px;
   margin-left: 5px;
   font-size: 20px;
   font-family: "Questrial";
   color: white;
+}
+.PortfolioPageName {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 60px;
+  font-family: "Questrial";
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .BusinessCard {
   background-color: #d9d9d9;
@@ -216,5 +234,26 @@ header {
   font-size: 17px;
   font-family: "Questrial";
 }
+.PortfolioFrame {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 40px;
+}
 
+.PortfolioSynopsis {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.PortfolioPageIntroduction {
+  margin-left: 20%;
+  font-family: "Questrial";
+  font-size: 17px;
+}
+.PortfolioPageBorder1 {
+  margin-top: 150;
+  /* margin-bottom: 150;
+  height: 1;
+  background: black; */
+}
 @import "react-slideshow-image/dist/styles.css";

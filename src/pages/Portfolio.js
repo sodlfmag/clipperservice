@@ -7,6 +7,7 @@ import getPortfolios from "../components/SamplePortfolio";
 
 //[점검] 포트폴리오 이미지가 이미 round되고 그림자가 있는데 해당 효과가 css로 필요한지
 
+// <PortfolioElement 에 상세페이지로 이어지는 Link가 필요하다.
 const elements = getPortfolios();
 const Portfolio = () => {
   return (
