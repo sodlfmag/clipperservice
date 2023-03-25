@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import React, { useEffect } from "react";
-import Portfolio from "./Portfolio";
 
 // Portfolio.js 에서 썸네일 클릭 시 해당 prop으로 portfolio 객체가 전달되어야 함.
 
@@ -68,7 +67,9 @@ function PortfolioPage() {
         <Link to="/portfolio" style={{ textDecoration: "none" }}>
           <button className="PageControlBtn">목록으로</button>
         </Link>
-        <button className="PageControlBtn">TOP</button>
+        <button className="PageControlBtn" onclick={window.scrollTo(0, 0)}>
+          TOP
+        </button>
       </div>
     </div>
     // your PortfolioPage content here

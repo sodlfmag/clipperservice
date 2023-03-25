@@ -26,15 +26,13 @@ const Contact = () => {
         </div>
       </div>
       <div className="RequestButtonContainer">
-        <button className="RequestButton">
-          <Link
-            className="RequestLink"
-            to="/contact/requestpage"
-            style={{ textDecoration: "none" }}
-          >
-            협업 문의하기
-          </Link>
-        </button>
+        <Link
+          className="RequestLink"
+          to="/contact/requestpage"
+          style={{ textDecoration: "none" }}
+        >
+          <button className="RequestButton">협업 문의하기</button>
+        </Link>
       </div>
     </>
   );
