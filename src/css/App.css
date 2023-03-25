@@ -269,5 +269,10 @@ header {
   font-size: 14px;
   font-family: "Questrial";
 }
+.portfolio-slide__image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
 
 @import "react-slideshow-image/dist/styles.css";

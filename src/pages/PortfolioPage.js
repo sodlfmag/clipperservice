@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useEffect } from "react";
+import ImageSlide from "../components/ImageSlide";
+import MyFooter from "../components/MyFooter";
 
 // Portfolio.js 에서 썸네일 클릭 시 해당 prop으로 portfolio 객체가 전달되어야 함.
 
@@ -29,49 +31,57 @@ function PortfolioPage() {
   }, []);
 
   return (
-    <div className="PortfolioFrame">
+    <>
+      <div className="PortfolioFrame">
+        <div>
+          <div className="PortfolioPageSub">
+            <div>{props.agency}</div>
+            <div>{props.date}</div>
+          </div>
+          <div className="PortfolioPageName">{props.name}</div>
+          <div className="PortfolioSynopsis">
+            <img
+              className="PortfolioPageThumbnail "
+              src={props.src}
+              width="500px"
+            />
+            <div className="PortfolioPageIntroduction">
+              {props.introduction}
+            </div>
+          </div>
+        </div>
+        <hr
+          className="PortfolioPageBorder1"
+          style={{
+            marginTop: 150,
+            marginBottom: 150,
+            height: 0.8,
+            background: "black",
+          }}
+        />
+        <hr
+          className="PortfolioPageBorder2"
+          style={{
+            marginTop: 150,
+            marginBottom: 20,
+            height: 0.8,
+            background: "black",
+          }}
+        />
+        <div style={{ textAlign: "right" }}>
+          <Link to="/portfolio" style={{ textDecoration: "none" }}>
+            <button className="PageControlBtn">목록으로</button>
+          </Link>
+          <button className="PageControlBtn" onclick={window.scrollTo(0, 0)}>
+            TOP
+          </button>
+        </div>
+      </div>
       <div>
-        <div className="PortfolioPageSub">
-          <div>{props.agency}</div>
-          <div>{props.date}</div>
-        </div>
-        <div className="PortfolioPageName">{props.name}</div>
-        <div className="PortfolioSynopsis">
-          <img
-            className="PortfolioPageThumbnail "
-            src={props.src}
-            width="500px"
-          />
-          <div className="PortfolioPageIntroduction">{props.introduction}</div>
-        </div>
+        <ImageSlide />
       </div>
-      <hr
-        className="PortfolioPageBorder1"
-        style={{
-          marginTop: 150,
-          marginBottom: 150,
-          height: 0.8,
-          background: "black",
-        }}
-      />
-      <hr
-        className="PortfolioPageBorder2"
-        style={{
-          marginTop: 150,
-          marginBottom: 20,
-          height: 0.8,
-          background: "black",
-        }}
-      />
-      <div style={{ textAlign: "right" }}>
-        <Link to="/portfolio" style={{ textDecoration: "none" }}>
-          <button className="PageControlBtn">목록으로</button>
-        </Link>
-        <button className="PageControlBtn" onclick={window.scrollTo(0, 0)}>
-          TOP
-        </button>
-      </div>
-    </div>
+      <MyFooter />
+    </>
     // your PortfolioPage content here
   );
 }
