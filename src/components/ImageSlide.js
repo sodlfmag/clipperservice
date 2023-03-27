@@ -4,18 +4,18 @@ import "react-multi-carousel/lib/styles.css";
 const portfolioItems = [
   {
     image: process.env.PUBLIC_URL + `/assets/gallery/1.png`,
-    title: "Project 1",
-    description: "This is my first project.",
+    title: "Clipper Service personal work of April",
+    date: "2023-05-01",
   },
   {
     image: process.env.PUBLIC_URL + `/assets/gallery/2.png`,
-    title: "Project 2",
-    description: "This is my second project.",
+    title: "Project 3",
+    date: "2023-05-01",
   },
   {
     image: process.env.PUBLIC_URL + `/assets/gallery/3.png`,
     title: "Project 3",
-    description: "This is my third project.",
+    date: "2023-05-01",
   },
 
   // add more portfolio items as necessary
@@ -24,6 +24,8 @@ const portfolioItems = [
 const ImageSlide = () => {
   return (
     <Carousel
+      style={{ width: "80%" }}
+      showDots={false}
       additionalTransfrom={0}
       arrows
       autoPlaySpeed={3000}
@@ -31,7 +33,7 @@ const ImageSlide = () => {
       className=""
       containerClass="container"
       dotListClass=""
-      draggable
+      draggable={false}
       focusOnSelect={false}
       infinite
       itemClass=""
@@ -45,7 +47,7 @@ const ImageSlide = () => {
             max: 3000,
             min: 1024,
           },
-          items: 3,
+          items: 2,
         },
         mobile: {
           breakpoint: {
@@ -62,20 +64,25 @@ const ImageSlide = () => {
           items: 2,
         },
       }}
-      showDots
+      itemWidth={1000}
       sliderClass=""
       slidesToSlide={1}
       swipeable
     >
       {portfolioItems.map((item) => (
         <div key={item.title}>
-          <img
-            className="portfolio-slide__image"
-            src={item.image}
-            alt={item.title}
-          />
-          <h3>{item.title}</h3>
-          <p>{item.description}</p>
+          <div className="GalleryElement">
+            <img
+              className="portfolio-slide__image"
+              src={item.image}
+              alt={item.title}
+              style={{ borderRadius: "5px" }}
+            />
+            <div className="GallerySub">
+              <div>{item.title}</div>
+              <div>{item.date}</div>
+            </div>
+          </div>
         </div>
       ))}
     </Carousel>
@@ -83,56 +90,3 @@ const ImageSlide = () => {
 };
 
 export default ImageSlide;
-
-//--------------
-// import React from "react";
-// import { Slide } from "react-slideshow-image";
-// import "react-slideshow-image/dist/styles.css";
-
-// const spanStyle = {
-//   padding: "20px",
-//   background: "#efefef",
-//   color: "#000000",
-// };
-
-// const divStyle = {
-//   display: "flex",
-//   alignItems: "center",
-//   justifyContent: "center",
-//   backgroundSize: "cover",
-//   height: "400px",
-// };
-// const slideImages = [
-//   {
-//     url: process.env.PUBLIC_URL + `/assets/gallery/1.png`,
-//     caption: "Slide 1",
-//   },
-//   {
-//     url: `/assets/gallery/2.png`,
-//     caption: "Slide 2",
-//   },
-//   {
-//     url: `/assets/gallery/3.png`,
-//     caption: "Slide 3",
-//   },
-// ];
-
-// const ImageSlide = () => {
-//   return (
-//     <div className="slide-container">
-//       <Slide>
-//         {slideImages.map((slideImage, index) => (
-//           <div key={index}>
-//             <div
-//               style={{ ...divStyle, backgroundImage: `url(${slideImage.url})` }}
-//             >
-//               <span style={spanStyle}>{slideImage.caption}</span>
-//             </div>
-//           </div>
-//         ))}
-//       </Slide>
-//     </div>
-//   );
-// };
-
-// export default ImageSlide;

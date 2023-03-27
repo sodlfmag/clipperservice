@@ -60,6 +60,7 @@ header {
 .PortfolioElement {
   max-width: 330px;
   margin-left: 70px;
+  margin-bottom: 40px;
 }
 
 .PortfolioSub {
@@ -269,10 +270,14 @@ header {
   font-size: 14px;
   font-family: "Questrial";
 }
-.portfolio-slide__image {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
+.GallerySub {
+  margin: auto;
+  max-width: 350px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Questrial";
+  color: white;
 }
 
 @import "react-slideshow-image/dist/styles.css";

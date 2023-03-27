@@ -3,7 +3,13 @@
 }
 
 .container {
-  background-color: pink;
+  // background-color: pink;
+  color: white;
+  // width: 80%;
+  text-align: center;
+
+  width: 60%;
+  margin: 0 auto;
 }
 
 .barCompleted {
@@ -14,4 +20,9 @@
 .label {
   font-size: 20px;
   color: green;
+}
+.portfolio-slide__image {
+  width: 350px;
+  height: 525px;
+  object-fit: cover;
 }
