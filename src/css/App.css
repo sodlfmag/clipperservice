@@ -279,5 +279,18 @@ header {
   font-family: "Questrial";
   color: white;
 }
+.GalleryTitle {
+  color: white;
+  margin-left: 24%;
+  font-family: "Questrial";
+  font-size: 30px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
 
 @import "react-slideshow-image/dist/styles.css";
