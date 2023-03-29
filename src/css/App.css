@@ -51,6 +51,7 @@ header {
 }
 .PortfolioList {
   margin-top: 70px;
+  margin-bottom: 150px;
   margin-left: 120px;
   display: flex;
   flex-wrap: wrap;
@@ -140,7 +141,7 @@ header {
   margin-left: 70px;
 }
 .MyFooter {
-  margin-top: 150px;
+  /* margin-top: 150px; */
   background-color: #161616;
   display: flex;
 }
@@ -258,6 +259,8 @@ header {
   background: black;
 }
 .PageControlBtn {
+  vertical-align: top;
+  height: 30px;
   margin-left: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -294,3 +297,9 @@ header {
 }
 
 @import "react-slideshow-image/dist/styles.css";
+
+.PortfolioBottomSlideContainer {
+  background-color: black;
+  padding-top: 80px;
+  padding-bottom: 120px;
+}

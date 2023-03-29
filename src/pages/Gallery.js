@@ -19,6 +19,7 @@ const Gallery = () => {
         <div className="GalleryTitle">Clipper Service Personal work</div>
         <ImageSlide4 />
       </div>
+      <div style={{ marginBottom: "150px" }}></div>
       <MyFooter />
     </>
   );

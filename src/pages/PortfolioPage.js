@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import React, { useEffect } from "react";
 import ImageSlide from "../components/ImageSlide";
 import MyFooter from "../components/MyFooter";
-
+import PortfolioBottomSlide from "../components/PortfolioBottomSlide";
 // Portfolio.js 에서 썸네일 클릭 시 해당 prop으로 portfolio 객체가 전달되어야 함.
 
 const props = {
@@ -72,13 +72,15 @@ function PortfolioPage() {
           <Link to="/portfolio" style={{ textDecoration: "none" }}>
             <button className="PageControlBtn">목록으로</button>
           </Link>
+
           <button className="PageControlBtn" onclick={window.scrollTo(0, 0)}>
             TOP
           </button>
         </div>
       </div>
-      <div>
-        <ImageSlide />
+      <div style={{ marginBottom: "40px" }}></div>
+      <div className="PortfolioBottomSlideContainer">
+        <PortfolioBottomSlide />
       </div>
       <MyFooter />
     </>
