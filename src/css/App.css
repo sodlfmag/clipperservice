@@ -303,3 +303,9 @@ header {
   padding-top: 80px;
   padding-bottom: 120px;
 }
+.GalleryFrame {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 40px;
+  font-family: "Questrial";
+}

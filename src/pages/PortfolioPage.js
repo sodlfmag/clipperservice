@@ -22,7 +22,7 @@ const props = {
   Instagram AR Filter`,
 };
 
-function PortfolioPage() {
+const PortfolioPage = () => {
   useEffect(() => {
     document.body.style.backgroundColor = "white";
 
@@ -79,6 +79,6 @@ function PortfolioPage() {
     </>
     // your PortfolioPage content here
   );
-}
+};
 
 export default PortfolioPage;

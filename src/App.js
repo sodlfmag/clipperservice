@@ -6,6 +6,7 @@ import RequestPage from "./pages/RequestPage";
 import "./css/App.css";
 import MyHeader from "./components/MyHeader";
 import PortfolioPage from "./pages/PortfolioPage";
+import GalleryPage from "./pages/GalleryPage";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact/requestpage" element={<RequestPage />} />
           <Route path="/portfoliopage" element={<PortfolioPage />} />
+          <Route path="/gallerypage" element={<GalleryPage />} />
         </Routes>
       </div>
     </BrowserRouter>
