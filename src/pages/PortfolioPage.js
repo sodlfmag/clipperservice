@@ -20,7 +20,12 @@ const props = {
   Art Prop (Headpiece)
   Instagram AR Filter`,
 };
-
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 function PortfolioPage() {
   useEffect(() => {
     document.body.style.backgroundColor = "white";
@@ -73,7 +78,7 @@ function PortfolioPage() {
             <button className="PageControlBtn">목록으로</button>
           </Link>
 
-          <button className="PageControlBtn" onclick={window.scrollTo(0, 0)}>
+          <button className="PageControlBtn" onClick={scrollToTop}>
             TOP
           </button>
         </div>
