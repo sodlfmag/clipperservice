@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import ImageSlide from "../components/ImageSlide";
 import MyFooter from "../components/MyFooter";
 import PortfolioBottomSlide from "../components/PortfolioBottomSlide";
+import PageControlBtns from "../components/PageControlBtns";
 // Portfolio.js 에서 썸네일 클릭 시 해당 prop으로 portfolio 객체가 전달되어야 함.
 
 const props = {
@@ -20,12 +21,7 @@ const props = {
   Art Prop (Headpiece)
   Instagram AR Filter`,
 };
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
+
 function PortfolioPage() {
   useEffect(() => {
     document.body.style.backgroundColor = "white";
@@ -73,15 +69,7 @@ function PortfolioPage() {
             background: "black",
           }}
         />
-        <div style={{ textAlign: "right" }}>
-          <Link to="/portfolio" style={{ textDecoration: "none" }}>
-            <button className="PageControlBtn">목록으로</button>
-          </Link>
-
-          <button className="PageControlBtn" onClick={scrollToTop}>
-            TOP
-          </button>
-        </div>
+        <PageControlBtns address="/portfolio" />
       </div>
       <div style={{ marginBottom: "40px" }}></div>
       <div className="PortfolioBottomSlideContainer">
