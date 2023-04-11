@@ -309,3 +309,12 @@ header {
   margin-top: 40px;
   font-family: "Questrial";
 }
+.ck.ck-editor__editable:not(.ck-editor__nested-editable) {
+  min-height: 400px;
+  background-color: white;
+}
+.AdminEditor {
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: white;
+}

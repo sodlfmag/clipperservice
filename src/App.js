@@ -9,6 +9,7 @@ import PortfolioPage from "./pages/PortfolioPage";
 import GalleryPage from "./pages/GalleryPage";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AdminEditor from "./pages/AdminEditor";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact/requestpage" element={<RequestPage />} />
           <Route path="/portfoliopage" element={<PortfolioPage />} />
           <Route path="/gallerypage" element={<GalleryPage />} />
+          <Route path="/admineditor" element={<AdminEditor />} />
         </Routes>
       </div>
     </BrowserRouter>
