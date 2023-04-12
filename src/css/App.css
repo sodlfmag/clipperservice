@@ -51,7 +51,6 @@ header {
 }
 .PortfolioList {
   margin-top: 70px;
-  margin-bottom: 150px;
   margin-left: 120px;
   display: flex;
   flex-wrap: wrap;
@@ -317,4 +316,14 @@ header {
   margin-left: 15%;
   margin-right: 15%;
   background-color: white;
+}
+
+/* 포트폴리오 탭 하단 스크롤 Contact 독려 이미지 */
+.EncourageBannerImg {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+  object-fit: cover;
 }

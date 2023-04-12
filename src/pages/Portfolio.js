@@ -4,6 +4,7 @@ import MyFooter from "../components/MyFooter";
 import PageBody from "../components/PageBody";
 import PortfolioElement from "../components/PortfolioElement";
 import getPortfolios from "../components/SamplePortfolio";
+import EncourageBanner from "../components/EncourageBanner";
 
 //[점검] 포트폴리오 이미지가 이미 round되고 그림자가 있는데 해당 효과가 css로 필요한지
 
@@ -23,6 +24,7 @@ const Portfolio = () => {
           </>
         ))}
       </div>
+      <EncourageBanner />
       {MyFooter()}
     </>
   );

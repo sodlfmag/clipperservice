@@ -22,7 +22,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact/requestpage" element={<RequestPage />} />
-          <Route path="/portfoliopage" element={<PortfolioPage />} />
+          <Route path="/portfoliopage/" element={<PortfolioPage />} />
           <Route path="/gallerypage" element={<GalleryPage />} />
           <Route path="/admineditor" element={<AdminEditor />} />
         </Routes>
