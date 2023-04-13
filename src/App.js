@@ -19,10 +19,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:id" element={<PortfolioPage />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact/requestpage" element={<RequestPage />} />
-          <Route path="/portfoliopage/" element={<PortfolioPage />} />
           <Route path="/gallerypage" element={<GalleryPage />} />
           <Route path="/admineditor" element={<AdminEditor />} />
         </Routes>
