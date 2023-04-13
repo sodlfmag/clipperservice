@@ -24,11 +24,10 @@ import { useLocation } from "react-router";
 
 // src={props.clipperImageDtos[0].fileName}
 
-const PortfolioPage = (p) => {
+const PortfolioPage = (props) => {
   const index = useLocation().state.index;
-  const props = p.portfolios[index];
-  console.log("인덱스는: ", index);
-  console.log(props);
+  const element = props.portfolios[index];
+  console.log("index: ", index);
   useEffect(() => {
     document.body.style.backgroundColor = "white";
 
@@ -37,25 +36,49 @@ const PortfolioPage = (p) => {
     };
   }, []);
   const { id } = useParams();
-  console.log(id);
+  console.log("id: ", id);
+  const length = props.portfolios.length;
+  console.log("length: ", length);
+  let reverseIndex = length - index - 1;
+  console.log("ReverseIndex: ", reverseIndex);
+  console.log(reverseIndex === 0);
+
+  // 포트폴리오 페이지 하단 슬라이드가 현재 페이지 기준으로 순서가 매핑되게 만드는 슬라이싱 구조
+  let sliders;
+  if (reverseIndex === 0) {
+    sliders = [
+      props.portfolios[0],
+      ...[...props.portfolios].reverse().slice(0, length - 1),
+    ];
+  } else if (reverseIndex === length - 1) {
+    sliders = [
+      ...[...props.portfolios].reverse().slice(length - 2),
+      ...[...props.portfolios].reverse().slice(0, length - 2),
+    ];
+  } else {
+    sliders = [
+      ...[...props.portfolios].reverse().slice(reverseIndex - 1),
+      ...[...props.portfolios].reverse().slice(0, reverseIndex - 1),
+    ];
+  }
 
   return (
     <>
       <div className="PortfolioFrame">
         <div>
           <div className="PortfolioPageSub">
-            <div>{props.agency}</div>
-            <div>{props.date}</div>
+            <div>{element.agency}</div>
+            <div>{element.date}</div>
           </div>
-          <div className="PortfolioPageName">{props.title}</div>
+          <div className="PortfolioPageName">{element.title}</div>
           <div className="PortfolioSynopsis">
             <img
               className="PortfolioPageThumbnail "
-              src={props.clipperImageDtos[0].fileName}
+              src={element.clipperImageDtos[0].fileName}
               width="446px"
             />
             <div className="PortfolioPageIntroduction">
-              {props.introduction}
+              {element.introduction}
             </div>
           </div>
         </div>
@@ -81,7 +104,7 @@ const PortfolioPage = (p) => {
       </div>
       <div style={{ marginBottom: "40px" }}></div>
       <div className="PortfolioBottomSlideContainer">
-        <PortfolioBottomSlide />
+        <PortfolioBottomSlide sliders={sliders} />
       </div>
       <MyFooter />
     </>

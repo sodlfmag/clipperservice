@@ -1,29 +1,31 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const portfolioItems = [
-  {
-    image: process.env.PUBLIC_URL + `/assets/portfolios/1.png`,
-  },
-  {
-    image: process.env.PUBLIC_URL + `/assets/portfolios/2.png`,
-  },
-  {
-    image: process.env.PUBLIC_URL + `/assets/portfolios/3.png`,
-  },
-  {
-    image: process.env.PUBLIC_URL + `/assets/portfolios/4.png`,
-  },
-  {
-    image: process.env.PUBLIC_URL + `/assets/portfolios/5.png`,
-  },
-  {
-    image: process.env.PUBLIC_URL + `/assets/portfolios/6.png`,
-  },
-  // add more portfolio items as necessary
-];
+// const portfolioItems = [
+//   {
+//     image: process.env.PUBLIC_URL + `/assets/portfolios/1.png`,
+//   },
+//   {
+//     image: process.env.PUBLIC_URL + `/assets/portfolios/2.png`,
+//   },
+//   {
+//     image: process.env.PUBLIC_URL + `/assets/portfolios/3.png`,
+//   },
+//   {
+//     image: process.env.PUBLIC_URL + `/assets/portfolios/4.png`,
+//   },
+//   {
+//     image: process.env.PUBLIC_URL + `/assets/portfolios/5.png`,
+//   },
+//   {
+//     image: process.env.PUBLIC_URL + `/assets/portfolios/6.png`,
+//   },
+//   // add more portfolio items as necessary
+// ];
 
-const ImageSlide = () => {
+const ImageSlide = (props) => {
+  const sliders = props.sliders;
+
   return (
     <Carousel
       style={{ width: "80%" }}
@@ -71,10 +73,13 @@ const ImageSlide = () => {
       slidesToSlide={1}
       swipeable
     >
-      {portfolioItems.map((item) => (
+      {sliders.map((item) => (
         <div key={item.title}>
           <div className="GalleryElement">
-            <img className="PortfolioBottomImage" src={item.image} />
+            <img
+              className="PortfolioBottomImage"
+              src={item.clipperImageDtos[0].fileName}
+            />
           </div>
         </div>
       ))}
