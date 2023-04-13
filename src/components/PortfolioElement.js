@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const PortfolioElement = (props) => {
   const location = "/portfolio/" + props.element.portfolioId;
   return (
-    <Link to={location}>
-      <div className="PortfolioElement">
+    <div className="PortfolioElement">
+      <Link className="PortfolioLink" to={location}>
         <img
           className="PortfolioImage"
           src={props.element.clipperImageDtos[0].fileName}
@@ -17,8 +17,8 @@ const PortfolioElement = (props) => {
           <div>{props.element.date}</div>
         </div>
         <div className="PortfolioName">{props.element.title}</div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 

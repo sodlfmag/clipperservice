@@ -327,3 +327,7 @@ header {
   width: 80%;
   object-fit: cover;
 }
+
+.PortfolioLink {
+  text-decoration: none;
+}
