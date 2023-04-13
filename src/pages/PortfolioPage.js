@@ -5,7 +5,7 @@ import MyFooter from "../components/MyFooter";
 import PortfolioBottomSlide from "../components/PortfolioBottomSlide";
 import PageControlBtns from "../components/PageControlBtns";
 // Portfolio.js 에서 썸네일 클릭 시 해당 prop으로 portfolio 객체가 전달되어야 함.
-
+import { useLocation } from "react-router";
 const props = {
   src: process.env.PUBLIC_URL + `/assets/portfolios/1.png`,
   name: "Owen - Cry",
@@ -23,6 +23,8 @@ const props = {
 };
 
 const PortfolioPage = () => {
+  const index = useLocation().state.index;
+  console.log("인덱스는: ", index);
   useEffect(() => {
     document.body.style.backgroundColor = "white";
 
@@ -30,7 +32,6 @@ const PortfolioPage = () => {
       document.body.style.backgroundColor = "";
     };
   }, []);
-
   const { id } = useParams();
   console.log(id);
 

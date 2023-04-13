@@ -9,7 +9,13 @@ const PortfolioElement = (props) => {
   const location = "/portfolio/" + props.element.portfolioId;
   return (
     <div className="PortfolioElement">
-      <Link className="PortfolioLink" to={location}>
+      <Link
+        className="PortfolioLink"
+        to={location}
+        state={{
+          index: index,
+        }}
+      >
         <img
           className="PortfolioImage"
           // 각 요소 이미지 배열에서 첫 번째 이미지가 썸네일로 입력
