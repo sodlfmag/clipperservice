@@ -14,7 +14,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import getPortfolios from "./components/SamplePortfolio";
 
 function App() {
-  const portfolios = [...getPortfolios()].reverse();
+  const portfolios = getPortfolios();
 
   return (
     <BrowserRouter>
