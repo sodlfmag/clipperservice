@@ -11,8 +11,9 @@ import EncourageBanner from "../components/EncourageBanner";
 // <PortfolioElement 에 상세페이지로 이어지는 Link가 필요하다.
 
 // 포트폴리오 역순 배열로 최신 등록 포트폴리오가 가장 앞에 오도록 설정
-const elements = [...getPortfolios()].reverse();
-const Portfolio = () => {
+// const elements = [...getPortfolios()].reverse();
+const Portfolio = (props) => {
+  const elements = props.portfolios;
   let index = elements.length - 1;
   return (
     <>

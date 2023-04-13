@@ -11,8 +11,11 @@ import GalleryPage from "./pages/GalleryPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminEditor from "./pages/AdminEditor";
 import ScrollToTop from "./components/ScrollToTop";
+import getPortfolios from "./components/SamplePortfolio";
 
 function App() {
+  const portfolios = [...getPortfolios()].reverse();
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -27,7 +30,10 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route
+            path="/portfolio"
+            element={<Portfolio portfolios={portfolios} />}
+          />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact/requestpage" element={<RequestPage />} />
