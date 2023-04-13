@@ -2,12 +2,16 @@
 const PortfolioElement = (props) => {
   return (
     <div className="PortfolioElement">
-      <img className="PortfolioImage" src={props.element.src} width="330px" />
+      <img
+        className="PortfolioImage"
+        src={props.element.clipperImageDtos[0].fileName}
+        width="330px"
+      />
       <div className="PortfolioSub">
         <div>{props.element.agency}</div>
         <div>{props.element.date}</div>
       </div>
-      <div className="PortfolioName">{props.element.name}</div>
+      <div className="PortfolioName">{props.element.title}</div>
     </div>
   );
 };

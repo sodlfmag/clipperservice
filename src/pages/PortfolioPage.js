@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import React, { useEffect } from "react";
 import ImageSlide from "../components/ImageSlide";
 import MyFooter from "../components/MyFooter";
@@ -30,6 +30,9 @@ const PortfolioPage = () => {
       document.body.style.backgroundColor = "";
     };
   }, []);
+
+  const { id } = useParams();
+  console.log(id);
 
   return (
     <>
