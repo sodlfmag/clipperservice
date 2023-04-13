@@ -24,7 +24,10 @@ function App() {
         {/*포트폴리오, 갤러리 상세 LINK 시 ScrollToTop 적용 위해 별도 Routes 생성*/}
         <ScrollToTop />
         <Routes>
-          <Route path="/portfolio/:id" element={<PortfolioPage />} />
+          <Route
+            path="/portfolio/:id"
+            element={<PortfolioPage portfolios={portfolios} />}
+          />
           <Route path="/gallerypage" element={<GalleryPage />} />
         </Routes>
 
