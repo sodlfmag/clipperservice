@@ -328,6 +328,7 @@ header {
   object-fit: cover;
 }
 
+/* 포트폴리오 탭 각 요소 라우팅 링크 */
 .PortfolioLink {
   text-decoration: none;
 }

@@ -10,20 +10,27 @@ import GalleryPage from "./pages/GalleryPage";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminEditor from "./pages/AdminEditor";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <MyHeader />
+
+        {/*포트폴리오, 갤러리 상세 LINK 시 ScrollToTop 적용 위해 별도 Routes 생성*/}
+        <ScrollToTop />
+        <Routes>
+          <Route path="/portfolio/:id" element={<PortfolioPage />} />
+          <Route path="/gallerypage" element={<GalleryPage />} />
+        </Routes>
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/portfolio/:id" element={<PortfolioPage />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact/requestpage" element={<RequestPage />} />
-          <Route path="/gallerypage" element={<GalleryPage />} />
           <Route path="/admineditor" element={<AdminEditor />} />
         </Routes>
       </div>
