@@ -3,6 +3,9 @@
 import { Link } from "react-router-dom";
 
 const PortfolioElement = (props) => {
+  // 포트폴리오 배열에서 현재 Element 요소의 index
+  const index = props.index;
+  // 포트폴리오 고유 id
   const location = "/portfolio/" + props.element.portfolioId;
   return (
     <div className="PortfolioElement">

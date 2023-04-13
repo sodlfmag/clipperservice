@@ -13,6 +13,7 @@ import EncourageBanner from "../components/EncourageBanner";
 // 포트폴리오 역순 배열로 최신 등록 포트폴리오가 가장 앞에 오도록 설정
 const elements = [...getPortfolios()].reverse();
 const Portfolio = () => {
+  let index = elements.length - 1;
   return (
     <>
       <PageBody
@@ -22,7 +23,7 @@ const Portfolio = () => {
       <div className="PortfolioList">
         {elements.map((element) => (
           <>
-            <PortfolioElement element={element} />
+            <PortfolioElement element={element} index={index--} />
           </>
         ))}
       </div>
