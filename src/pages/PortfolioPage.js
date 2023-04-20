@@ -60,6 +60,7 @@ const PortfolioPage = (props) => {
               className="PortfolioPageThumbnail "
               src={element.clipperImageDtos[0].fileName}
               width="446px"
+              height="446px"
             />
             <div className="PortfolioPageIntroduction">
               {parse(element.introduction)}
