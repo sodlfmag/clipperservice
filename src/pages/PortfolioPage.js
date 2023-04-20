@@ -76,6 +76,7 @@ const PortfolioPage = (props) => {
             background: "black",
           }}
         />
+        {parse(element.contents)}
         <hr
           className="PortfolioPageBorder2"
           style={{
