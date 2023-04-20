@@ -332,3 +332,14 @@ header {
 .PortfolioLink {
   text-decoration: none;
 }
+
+/* 포트폴리오 탭 각 요소 썸네일 이미지 */
+.PortfolioImage {
+  width: 330px;
+  border-radius: 5px;
+}
+.PortfolioPageThumbnail {
+  width: 446px;
+  height: 446px;
+  filter: drop-shadow(10px 10px 10px #252525);
+}

@@ -20,7 +20,6 @@ const PortfolioElement = (props) => {
           className="PortfolioImage"
           // 각 요소 이미지 배열에서 첫 번째 이미지가 썸네일로 입력
           src={props.element.clipperImageDtos[0].fileName}
-          width="330px"
         />
         <div className="PortfolioSub">
           <div>{props.element.agency}</div>
