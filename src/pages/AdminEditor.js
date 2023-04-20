@@ -3,7 +3,10 @@ import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
 class AdminEditor extends Component {
+  const;
+
   render() {
+    let val;
     return (
       <div className="AdminEditor">
         <h2>관리자 모드 에디터</h2>
@@ -16,16 +19,18 @@ class AdminEditor extends Component {
           }}
           onChange={(event, editor) => {
             const data = editor.getData();
-            console.log({ event, editor, data });
+            val = data;
+            console.log({ data });
           }}
-          onBlur={(event, editor) => {
-            console.log("Blur.", editor);
-          }}
-          onFocus={(event, editor) => {
-            console.log("Focus.", editor);
-          }}
+          // onBlur={(event, editor) => {
+          //   console.log("Blur.", editor);
+          // }}
+          // onFocus={(event, editor) => {
+          //   console.log("Focus.", editor);
+          // }}
         />
         {/* <button>전송</button> */}
+        {val}asfasdf
       </div>
     );
   }

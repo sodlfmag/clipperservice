@@ -10,17 +10,8 @@ const elements = [
     portfolioId: 1,
     title: "BIG Naughty - 커피가게 아가씨(feat 원슈타인)",
     agency: "H1GHRMUSIC",
-    introduction: `2월 2일 발매된 BIG Naughty님의 [커피가게 아가씨 Feat.원슈타인] 의
-    디지털 앨범 커버 디자인과 앨범커버에 사용된 소품을 제작했습니다.
-    앨범 커버에 사용된 소품은 곡의 비쥬얼 라이저 영상에도 활용되었습니다.
-    
-
-
-
-Design & Production
-Artwork Design
-Art Prop Production
-
+    introduction: `
+    <p>2월 2일 발매된 BIG Naughty님의 [커피가게 아가씨 Feat.원슈타인] 의</p><p>&nbsp; &nbsp; 디지털 앨범 커버 디자인과 앨범커버에 사용된 소품을 제작했습니다.</p><p>&nbsp; &nbsp; 앨범 커버에 사용된 소품은 곡의 비쥬얼 라이저 영상에도 활용되었습니다.</p><p>&nbsp; &nbsp;</p><p><br><br><br>&nbsp;</p><p>Design &amp; Production</p><p>Artwork Design</p><p>Art Prop Production</p>
     `,
     contents: "대충 내용",
     date: "2022-10-31",
