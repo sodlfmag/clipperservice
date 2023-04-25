@@ -54,7 +54,7 @@ const PortfolioPage = (props) => {
             <div>{element.agency}</div>
             <div>{element.date}</div>
           </div>
-          <div className="PortfolioPageName">{element.title}</div>
+          <pre className="PortfolioPageName">{element.title}</pre>
           <div className="PortfolioSynopsis">
             <img
               className="PortfolioPageThumbnail "

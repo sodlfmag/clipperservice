@@ -5,6 +5,7 @@
 //   date: "2022-10-31",
 // };
 
+// 제목에서 줄 바꿈을 원할 때 \n을 엔터 대신 입력해야 한다.
 const elements = [
   {
     portfolioId: 1,
@@ -319,7 +320,7 @@ const elements = [
   },
   {
     portfolioId: 7,
-    title: "Khundipanda - The Spoild child 1st Aniversary MD",
+    title: `Khundipanda - The Spoild child\n1st Aniversary MD`,
     agency: "Dejavu Group",
     introduction: `<p>Khundipanda 님의 정규 앨범 [The Spoild Child:균] 의 발매 1주년을<br>기념하여 머천다이즈 3종을(뱃지, 쿠션, 후드) 디자인 및 생산했습니다.<br><br>해당 머천다이즈 중 2종 (뱃지, 쿠션)은 데자부 스토어에서 선 공개되어 판매 되었고<br>후드는 1월 17일에 왓차홀에서 진행 되었던 단독 콘서트에서 판매 되었습니다.<br><br>머천다이즈의 디자인과 생산 뿐만 아니라 해당 단독 콘서트에서&nbsp;<br>사용된 무대 소품또한 제작 하였습니다.<br><br>&nbsp;</p><p>&nbsp;</p><p>Design &amp; Production</p><ul><li>MD Production</li><li>Stage Props Production</li></ul>
     `,
