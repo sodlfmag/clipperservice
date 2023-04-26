@@ -194,11 +194,11 @@ function RequestForm() {
             onChange={handleInputChange}
           />
         </div>
-        <div>
+        {/* <div>
           &nbsp;&nbsp;&nbsp;&nbsp;첨부파일&nbsp;&nbsp;&nbsp;
           <button className="AttachmentBtn">업로드</button>
-        </div>
-        <div>
+        </div> */}
+        <div style={{ marginTop: "20px" }}>
           <button className="SubmitBtn" type="submit">
             전송
           </button>
