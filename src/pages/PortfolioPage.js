@@ -69,7 +69,7 @@ const PortfolioPage = (props) => {
           className="PortfolioPageBorder1"
           style={{
             marginTop: 150,
-            marginBottom: 150,
+            marginBottom: 50,
             height: 0.8,
             background: "black",
           }}
@@ -81,7 +81,7 @@ const PortfolioPage = (props) => {
         <hr
           className="PortfolioPageBorder2"
           style={{
-            marginTop: 150,
+            marginTop: 100,
             marginBottom: 20,
             height: 0.8,
             background: "black",
