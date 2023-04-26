@@ -9,12 +9,12 @@
 const elements = [
   {
     portfolioId: 1,
-    title: "BIG Naughty - 커피가게 아가씨(feat 원슈타인)",
+    title: "BIG Naughty - 커피가게 아가씨",
     agency: "H1GHRMUSIC",
     introduction: `
     <p>2월 2일 발매된 BIG Naughty님의 [커피가게 아가씨 Feat.원슈타인] 의</p><p>&nbsp; &nbsp; 디지털 앨범 커버 디자인과 앨범커버에 사용된 소품을 제작했습니다.</p><p>&nbsp; &nbsp; 앨범 커버에 사용된 소품은 곡의 비쥬얼 라이저 영상에도 활용되었습니다.</p><p>&nbsp; &nbsp;</p><p><br><br><br>&nbsp;</p><p>Design &amp; Production</p><p>Artwork Design</p><p>Art Prop Production</p>
     `,
-    contents: "대충 내용",
+    contents: "",
     date: "2022-10-31",
     clipperImageDtos: [
       {
@@ -158,7 +158,7 @@ const elements = [
   },
   {
     portfolioId: 4,
-    title: "BIG Naughty - STAB (Feat. eaJ) (Prod. dress)",
+    title: "BIG Naughty - STAB\n(Feat. eaJ) (Prod. dress)",
     agency: "H1GERMUSIC",
     introduction: `<p>11월 18일 발매된 BIG Naughty님의 [STAB] 의&nbsp;<br>디지털 앨범 커버의 디자인과 앨범 커버에 사용된 소품을 제작했습니다.<br>앨범 커버에 사용된 소품은 곡의 비쥬얼 라이저 영상에도 활용되었습니다.<br><br>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Design &amp; Production</p><ul><li>Artwork Design</li><li>Art Prop Production</li><li>Visualizer video</li></ul>
     `,
@@ -473,24 +473,556 @@ const elements = [
       {
         fileName:
           process.env.PUBLIC_URL +
-          `/assets/포트폴리오 사진/09_30 크루 컴필/3CM3.png`,
+          `/assets/포트폴리오 사진/09_30 크루 컴필/3CM3.jpg`,
         thumbnail: false,
       },
       {
         fileName:
           process.env.PUBLIC_URL +
-          `/assets/포트폴리오 사진/09_30 크루 컴필/3CM4.png`,
+          `/assets/포트폴리오 사진/09_30 크루 컴필/3CM4.jpg`,
         thumbnail: false,
       },
       {
         fileName:
           process.env.PUBLIC_URL +
-          `/assets/포트폴리오 사진/09_30 크루 컴필/3CM5.png`,
+          `/assets/포트폴리오 사진/09_30 크루 컴필/3CM5.jpg`,
         thumbnail: false,
       },
     ],
   },
 ];
+
+// 여기부턴 로컬에서 임의로 만든 포트폴리오 상세페이지 하드코딩 Contents 값
+var test1 = (
+  <div className="PortfolioContentsContainer">
+    <div>
+      <div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Hb2AxEqhX2w"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[0].clipperImageDtos[1].fileName}
+        width={"374px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[0].clipperImageDtos[2].fileName}
+        width={"374px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[0].clipperImageDtos[3].fileName}
+        width={"374px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[0].clipperImageDtos[4].fileName}
+        width={"374px"}
+      />
+    </div>
+  </div>
+);
+
+var test2 = (
+  <div className="PortfolioContentsContainer">
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[1].clipperImageDtos[1].fileName}
+        width={"400px"}
+      />
+    </div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[1].clipperImageDtos[2].fileName}
+          width={"250px"}
+        />
+      </div>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[1].clipperImageDtos[3].fileName}
+          width={"250px"}
+          style={{ marginLeft: "30px" }}
+        />
+      </div>
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[1].clipperImageDtos[4].fileName}
+        width={"380px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[1].clipperImageDtos[5].fileName}
+        width={"500px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[1].clipperImageDtos[6].fileName}
+        width={"380px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[1].clipperImageDtos[7].fileName}
+        width={"380px"}
+      />
+    </div>
+  </div>
+);
+
+var test3 = (
+  <div className="PortfolioContentsContainer">
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[2].clipperImageDtos[1].fileName}
+        width={"380px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[2].clipperImageDtos[2].fileName}
+        width={"380px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[2].clipperImageDtos[3].fileName}
+        width={"380px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[2].clipperImageDtos[4].fileName}
+        width={"380px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[2].clipperImageDtos[5].fileName}
+        width={"380px"}
+      />
+    </div>
+  </div>
+);
+
+var test4 = (
+  <div className="PortfolioContentsContainer">
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/UZ433Np06vs"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[3].clipperImageDtos[1].fileName}
+        width={"600px"}
+      />
+    </div>
+
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[3].clipperImageDtos[2].fileName}
+          width={"350px"}
+        />
+      </div>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[3].clipperImageDtos[3].fileName}
+          width={"350px"}
+          style={{ marginLeft: "30px" }}
+        />
+      </div>
+    </div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[3].clipperImageDtos[4].fileName}
+          width={"350px"}
+        />
+      </div>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[3].clipperImageDtos[5].fileName}
+          width={"350px"}
+          style={{ marginLeft: "30px" }}
+        />
+      </div>
+    </div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[3].clipperImageDtos[6].fileName}
+          width={"350px"}
+        />
+      </div>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[3].clipperImageDtos[7].fileName}
+          width={"350px"}
+          style={{ marginLeft: "30px" }}
+        />
+      </div>
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[3].clipperImageDtos[8].fileName}
+        width={"600px"}
+      />
+    </div>
+  </div>
+);
+var test5 = (
+  <div className="PortfolioContentsContainer">
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/DFCtPKQUOgA?start=29"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[4].clipperImageDtos[1].fileName}
+          width={"340px"}
+        />
+      </div>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[4].clipperImageDtos[2].fileName}
+          width={"340px"}
+          style={{ marginLeft: "30px" }}
+        />
+      </div>
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[4].clipperImageDtos[3].fileName}
+        width={"560px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[4].clipperImageDtos[4].fileName}
+        width={"560px"}
+      />
+    </div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[4].clipperImageDtos[5].fileName}
+          width={"340px"}
+        />
+      </div>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[4].clipperImageDtos[6].fileName}
+          width={"340px"}
+          style={{ marginLeft: "30px" }}
+        />
+      </div>
+    </div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[4].clipperImageDtos[7].fileName}
+          width={"340px"}
+        />
+      </div>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[4].clipperImageDtos[8].fileName}
+          width={"340px"}
+          style={{ marginLeft: "30px" }}
+        />
+      </div>
+    </div>
+  </div>
+);
+
+var test6 = (
+  <div className="PortfolioContentsContainer">
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[5].clipperImageDtos[1].fileName}
+        width={"350px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[5].clipperImageDtos[2].fileName}
+        width={"350px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[5].clipperImageDtos[3].fileName}
+        width={"350px"}
+      />
+    </div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[5].clipperImageDtos[4].fileName}
+          width={"340px"}
+        />
+      </div>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[5].clipperImageDtos[5].fileName}
+          width={"340px"}
+          style={{ marginLeft: "30px" }}
+        />
+      </div>
+    </div>
+  </div>
+);
+var test7 = (
+  <div className="PortfolioContentsContainer">
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[6].clipperImageDtos[1].fileName}
+          width={"340px"}
+        />
+      </div>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[6].clipperImageDtos[2].fileName}
+          width={"340px"}
+          style={{ marginLeft: "30px" }}
+        />
+      </div>
+    </div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[6].clipperImageDtos[3].fileName}
+          width={"340px"}
+        />
+      </div>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[6].clipperImageDtos[4].fileName}
+          width={"340px"}
+          style={{ marginLeft: "30px" }}
+        />
+      </div>
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[6].clipperImageDtos[5].fileName}
+        width={"600px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[6].clipperImageDtos[6].fileName}
+        width={"600px"}
+      />
+    </div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[6].clipperImageDtos[7].fileName}
+          height={"350px"}
+        />
+      </div>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[6].clipperImageDtos[8].fileName}
+          height={"350px"}
+          style={{ marginLeft: "30px" }}
+        />
+      </div>
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[6].clipperImageDtos[9].fileName}
+        width={"370px"}
+      />
+    </div>
+  </div>
+);
+var test8 = (
+  <div className="PortfolioContentsContainer">
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/z2xic2SaqsU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[7].clipperImageDtos[1].fileName}
+          width={"340px"}
+        />
+      </div>
+      <div>
+        <img
+          className="PortfolioContentsImage"
+          src={elements[7].clipperImageDtos[2].fileName}
+          width={"340px"}
+          style={{ marginLeft: "30px" }}
+        />
+      </div>
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[7].clipperImageDtos[3].fileName}
+        width={"350px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[7].clipperImageDtos[4].fileName}
+        width={"350px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[7].clipperImageDtos[5].fileName}
+        width={"350px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[7].clipperImageDtos[6].fileName}
+        width={"350px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[7].clipperImageDtos[7].fileName}
+        width={"350px"}
+      />
+    </div>
+  </div>
+);
+var test9 = (
+  <div className="PortfolioContentsContainer">
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[8].clipperImageDtos[1].fileName}
+        width={"350px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[8].clipperImageDtos[2].fileName}
+        width={"350px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[8].clipperImageDtos[3].fileName}
+        width={"350px"}
+      />
+    </div>
+    <div>
+      <img
+        className="PortfolioContentsImage"
+        src={elements[8].clipperImageDtos[4].fileName}
+        width={"350px"}
+      />
+    </div>
+  </div>
+);
+
+elements[0].contents = test1;
+elements[1].contents = test2;
+elements[2].contents = test3;
+elements[3].contents = test4;
+elements[4].contents = test5;
+elements[5].contents = test6;
+elements[6].contents = test7;
+elements[7].contents = test8;
+elements[8].contents = test9;
 
 const getPortfolios = () => {
   return elements;
