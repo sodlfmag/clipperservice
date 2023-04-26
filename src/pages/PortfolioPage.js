@@ -13,7 +13,7 @@ const PortfolioPage = (props) => {
   const element = props.portfolios[index];
   console.log("index: ", index);
   useEffect(() => {
-    document.body.style.backgroundColor = "white";
+    document.body.style.backgroundColor = "#F1F1F1";
 
     return () => {
       document.body.style.backgroundColor = "";
@@ -74,7 +74,10 @@ const PortfolioPage = (props) => {
             background: "black",
           }}
         />
-        {parse(element.contents)}
+
+        {/*HTML elements로 내용 연동 시 파싱 
+        HTML elements를 문자열 형태로 받아올 경우에 src의 경로가 절대경로여야 하고, 띄어쓰기가 없게 처리해야 함*/}
+        {element.contents}
         <hr
           className="PortfolioPageBorder2"
           style={{
