@@ -1,10 +1,3 @@
-// const element = {
-//   src: process.env.PUBLIC_URL + `/assets/포트폴리오 사진//1.png`,
-//   name: "Owen - Cry",
-//   agency: "Eclipse Empire",
-//   date: "2022-10-31",
-// };
-
 // 제목에서 줄 바꿈을 원할 때 \n을 엔터 대신 입력해야 한다.
 const elements = [
   {
@@ -12,7 +5,7 @@ const elements = [
     title: "BIG Naughty - 커피가게 아가씨",
     agency: "H1GHRMUSIC",
     introduction: `
-    <p>2월 2일 발매된 BIG Naughty님의 [커피가게 아가씨 Feat.원슈타인] 의</p><p>&nbsp; &nbsp; 디지털 앨범 커버 디자인과 앨범커버에 사용된 소품을 제작했습니다.</p><p>&nbsp; &nbsp; 앨범 커버에 사용된 소품은 곡의 비쥬얼 라이저 영상에도 활용되었습니다.</p><p>&nbsp; &nbsp;</p><p><br><br><br>&nbsp;</p><p>Design &amp; Production</p><p>Artwork Design</p><p>Art Prop Production</p>
+    <p>2월 2일 발매된 BIG Naughty님의 [커피가게 아가씨 Feat.원슈타인] 의</p><p> 디지털 앨범 커버 디자인과 앨범커버에 사용된 소품을 제작했습니다.</p><p>앨범 커버에 사용된 소품은 곡의 비쥬얼 라이저 영상에도 활용되었습니다.</p><p>&nbsp; &nbsp;</p><p><br><br><br>&nbsp;</p><p>Design &amp; Production</p><ul><li>Artwork Design</li><li>Art Prop Production</li></ul>
     `,
     contents: "",
     date: "2022-10-31",
@@ -53,7 +46,7 @@ const elements = [
   {
     portfolioId: 2,
     title: "BIG Naughty - Bucket List [EP]",
-    agency: "H1GERMUSIC’",
+    agency: "H1GERMUSIC",
     introduction: `<p><br>2월 25일 발매된 BIG Naughty 님의 [Buket List]의<br>앨범 커버 디자인과, 피지컬 앨범 디자인을 진행 하였으며<br>앨범 커버에 사용된 소품을 제작하였습니다.<br><br>해당 소품과 아트워크는 성수 미술관과 하이어뮤직의 협업으로<br>2월 24일부터 약 2개월 간 전시를 진행하였습니다.</p><p>&nbsp;</p><p>&nbsp;</p><p>Design &amp; Production</p><ul><li>Artwork Design</li><li>Physical Album Design</li><li>Art Prop Production</li></ul>
     `,
     contents: "대충 내용",
@@ -224,7 +217,7 @@ const elements = [
   {
     portfolioId: 5,
     title: "Owen - Cry",
-    agency: "Eclipse Empire’",
+    agency: "Eclipse Empire",
     introduction: `<p>10월 31일 발매된 Owen님의 정규 앨범 [CRY] 의<br>디지털 앨범 커버와, 타이틀 곡 Jungle 에 사용된&nbsp;<br>뮤직비디오/공연용 헤드피스 소품을 제작했습니다.&nbsp;<br><br>헤드피스의 모델링 파일을 활용 하여 뮤지션의 라이브 방송과<br>팬들이 사용할 수 있는 인스타그램 AR 필터를 제작했습니다.<br>&nbsp;</p><p>&nbsp;</p><p><br><br>&nbsp;</p><p>&nbsp;</p><p>Design &amp; Production</p><ul><li>Art Prop (Headpiece)</li><li>Instagram AR Filtter</li></ul>
     `,
     contents: "대충 내용",
@@ -451,7 +444,7 @@ const elements = [
   },
   {
     portfolioId: 9,
-    title: "Crew 30 - THE FROST ON YOUR EDGE Aniversary MD",
+    title: "Crew 30 - THE FROST ON YOUR EDGE\nAniversary MD",
     agency: "Dejavu Group",
     introduction: `<p>힙합 크루 Crew 30의 컴필레이션 앨범 [THE FROST ON YOUR EDGE] 의<br>음감회를 기념하여 머천다이즈 1종을 디자인 및 생산 하였습니다.<br><br>해당 머천다이즈는 3월 6일 합정동 ‘데이토나 레코즈’ 에서 진행 되었던<br>음감회에서 판매 되었습니다.</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Design &amp; Production</p><ul><li>MD Production</li></ul>
     `,
