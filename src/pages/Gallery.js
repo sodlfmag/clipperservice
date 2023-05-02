@@ -13,12 +13,18 @@ const Gallery = () => {
       />
       <div>
         <div className="GalleryTitle">Clipper Collection</div>
-        <ImageSlide />
+
+        {/* 갤러리 내용 추가 시 커밍 순 이미지 없애고 후처리 */}
+        {/* <ImageSlide /> */}
+        <img
+          src={process.env.PUBLIC_URL + `/assets/ComingSoon.png`}
+          style={{ width: "50%", marginLeft: "25%" }}
+        />
       </div>
-      <div>
+      {/* <div>
         <div className="GalleryTitle">Clipper Service Personal work</div>
         <ImageSlide4 />
-      </div>
+      </div> */}
       <div style={{ marginBottom: "150px" }}></div>
       <MyFooter />
     </>
