@@ -8,7 +8,7 @@ const MyHeader = () => {
         <img
           className="LogoImage"
           width="254px"
-          src={process.env.PUBLIC_URL + `/assets/WhiteLogo.png`}
+          src={process.env.PUBLIC_URL + `/assets/logo/logo(white).svg`}
         />
       </NavLink>
       <div className="TabList">

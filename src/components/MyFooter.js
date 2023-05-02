@@ -3,7 +3,7 @@ const MyFooter = () => {
     <div className="MyFooter">
       <div className="FooterLogo">
         <img
-          src={process.env.PUBLIC_URL + `/assets/WhiteLogo.png`}
+          src={process.env.PUBLIC_URL + `/assets/logo/logo(white).svg`}
           width="200px"
         />
       </div>

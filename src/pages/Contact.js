@@ -7,7 +7,7 @@ const Contact = () => {
           <img
             className="Logo"
             width="254px"
-            src={process.env.PUBLIC_URL + `/assets/BlackLogo.png`}
+            src={process.env.PUBLIC_URL + `/assets/logo/logo(black).svg`}
           />
         </div>
         <div className="CorpInfoContainer">
