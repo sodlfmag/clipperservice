@@ -7,7 +7,9 @@ const Home = () => {
       <div className="VideoContainer">
         <video className="VisualizerVideo" loop autoplay="" muted>
           <source
-            src={process.env.PUBLIC_URL + `/assets/SampleVisualizerVideo.mp4`}
+            src={
+              process.env.PUBLIC_URL + `/assets/visualizerVideo/WaveVideo.mp4`
+            }
             type="video/mp4"
           />
         </video>
