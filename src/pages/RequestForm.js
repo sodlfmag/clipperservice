@@ -194,6 +194,7 @@ function RequestForm() {
             onChange={handleInputChange}
           />
         </div>
+        {/* EmailJs 첨부파일 업로드 유료기능이어서 삭제 */}
         {/* <div>
           &nbsp;&nbsp;&nbsp;&nbsp;첨부파일&nbsp;&nbsp;&nbsp;
           <button className="AttachmentBtn">업로드</button>
