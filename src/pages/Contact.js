@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import MyFooter from "../components/MyFooter";
+
 const Contact = () => {
   return (
     <>
@@ -34,6 +36,8 @@ const Contact = () => {
           <button className="RequestButton">협업 문의하기</button>
         </Link>
       </div>
+      <div style={{ marginBottom: "150px" }}></div>
+      <MyFooter />
     </>
   );
 };
