@@ -15,7 +15,7 @@ const MainHeader = () => {
         <TabButton name="PORTFOLIO" path="/portfolio" />
         <TabButton name="GALLERY" path="/gallery" />
         <TabButton name="CONTACT" path="/contact" />
-        <TabButton name="STORE" path="/store" />
+        <TabButton name="STORE" path="https://clipperservice.info/" />
       </div>
     </header>
   );

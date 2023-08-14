@@ -10,6 +10,10 @@ body {
   background-color: black;
 }
 
+.body HomeBody {
+  overflow: hidden;
+}
+
 .MyHeader {
   color: white;
   font-size: 20px;
