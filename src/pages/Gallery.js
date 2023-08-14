@@ -1,12 +1,14 @@
 import ImageSlide from "../components/ImageSlide";
 import ImageSlide4 from "../components/ImageSlide copy 2";
 import MyFooter from "../components/MyFooter";
+import MyHeader from "../components/MyHeader";
 import PageBody from "../components/PageBody";
 import { ProgressBars } from "../components/ProgressBar";
 
 const Gallery = () => {
   return (
     <>
+      <MyHeader className="test1" />
       <PageBody
         name="GALLERY"
         introduction="클리퍼의 단독 프로젝트를 매거진 형태로 만나보세요."

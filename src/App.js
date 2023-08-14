@@ -19,7 +19,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <MyHeader />
+        {/* <MyHeader /> */}
 
         {/*포트폴리오, 갤러리 상세 LINK 시 ScrollToTop 적용 위해 별도 Routes 생성 -> 모든 페이지에 No Route 경고 발생*/}
         <ScrollToTop />

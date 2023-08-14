@@ -10,12 +10,22 @@ body {
   background-color: black;
 }
 
-header {
+.MyHeader {
   color: white;
-  background-color: black;
   font-size: 20px;
   display: flex;
   font-family: "Questrial";
+  width: 100vw;
+}
+.MainHeader {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  font-family: "Questrial";
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
 }
 .LogoImage {
   margin-left: 20px;
@@ -33,12 +43,12 @@ header {
 }
 
 .VideoContainer {
-  text-align: center;
+  margin: 0px auto;
+  overflow: hidden;
 }
 .VisualizerVideo {
-  width: 80%;
-  /* max-width: 100%; */
-  height: auto;
+  width: 100vw;
+  position: absolute;
 }
 .PageTitle_name {
   font-size: 45px;

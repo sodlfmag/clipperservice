@@ -1,9 +1,9 @@
 import TabButton from "./TabButton";
 import { NavLink } from "react-router-dom";
 
-const MyHeader = () => {
+const MainHeader = () => {
   return (
-    <header className="MyHeader">
+    <header className="MainHeader">
       <NavLink to={"/"}>
         <img
           className="LogoImage"
@@ -21,4 +21,4 @@ const MyHeader = () => {
   );
 };
 
-export default MyHeader;
+export default MainHeader;

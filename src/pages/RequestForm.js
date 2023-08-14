@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import MyFooter from "../components/MyFooter";
+import ToggleButton from "../components/SampleBtn";
 
-function RequestForm() {
+function RequestForm(props) {
   const [formValues, setFormValues] = useState({
     name: "",
     title: "",
@@ -19,28 +20,35 @@ function RequestForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formValues);
-    emailjs
-      .send(
-        "service_zs62is5",
-        "template_cgml46n",
-        formValues,
-        "f5pPGzqTWAl-S5e8L"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          // display success message to user
-        },
-        (error) => {
-          console.log(error.text);
-          // display error message to user
-        }
-      );
+    let flag = window.confirm("메일을 전송하시겠습니까?");
+
+    if (flag) {
+      emailjs
+        .send(
+          "service_zs62is5",
+          "template_cgml46n",
+          formValues,
+          "f5pPGzqTWAl-S5e8L"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert("전송을 완료했습니다.");
+            // display success message to user
+          },
+          (error) => {
+            console.log(error.text);
+            // display error message to user
+          }
+        );
+    } else {
+      alert("전송을 취소했습니다.");
+    }
   };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-
+    console.log(value);
     // 카테고리 선택 시 배열에 이미 존재하는 경우 삭제, 존재하지 않는 경우 추가하는 동작
     if (name === "clicked_category") {
       if (formValues.clicked_category.includes(value)) {
@@ -63,6 +71,7 @@ function RequestForm() {
     }
     // 카테고리 선택이 아닌 텍스트 입력 시 실시간 formValues 변경값 반영
     else {
+      console.log(value);
       setFormValues((prevValues) => ({
         ...prevValues,
         [name]: value,
@@ -118,51 +127,46 @@ function RequestForm() {
             <label htmlFor="clicked_category">
               * 문의 유형&nbsp;&nbsp;&nbsp;
             </label>
-            <button
-              className="RequestCategoryBtn"
-              type="button"
+            <ToggleButton
+              // type="button"
               name="clicked_category"
               value="앨범 커버"
-              onClick={handleInputChange}
+              upperFunction={handleInputChange}
             >
               앨범 커버
-            </button>
-            <button
-              className="RequestCategoryBtn"
-              type="button"
+            </ToggleButton>
+            <ToggleButton
+              // type="button"
               name="clicked_category"
               value="머천다이즈"
-              onClick={handleInputChange}
+              upperFunction={handleInputChange}
             >
               머천다이즈
-            </button>
-            <button
-              className="RequestCategoryBtn"
-              type="button"
+            </ToggleButton>
+            <ToggleButton
+              // type="button"
               name="clicked_category"
               value="소품"
-              onClick={handleInputChange}
+              upperFunction={handleInputChange}
             >
               소품
-            </button>
-            <button
-              className="RequestCategoryBtn"
-              type="button"
+            </ToggleButton>
+            <ToggleButton
+              // type="button"
               name="clicked_category"
               value="콜라보"
-              onClick={handleInputChange}
+              upperFunction={handleInputChange}
             >
               콜라보
-            </button>
-            <button
-              className="RequestCategoryBtn"
-              type="button"
+            </ToggleButton>
+            <ToggleButton
+              // type="button"
               name="clicked_category"
               value="기타 문의"
-              onClick={handleInputChange}
+              upperFunction={handleInputChange}
             >
               기타 문의
-            </button>
+            </ToggleButton>
           </div>
         </div>
         <div>
@@ -204,11 +208,15 @@ function RequestForm() {
             전송
           </button>
         </div>
+        <ToggleButton value="샘플이다" />
       </form>
       <div style={{ marginBottom: "150px" }}></div>
       {MyFooter()}
     </div>
   );
 }
-
+// Clicked Category가 선택처리가 안돼요 ㅠ
 export default RequestForm;
+
+// OnClick 중첩으로 RequestForm의 카테고리 선택내역 저장 불가
+// 카테고리 선택 시마다 EmailJS전송되는 문제 발생중

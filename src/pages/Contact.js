@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import MyFooter from "../components/MyFooter";
+import MyHeader from "../components/MyHeader";
 
 const Contact = () => {
   return (
     <>
+      <MyHeader />
       <div className="BusinessCard">
         <div className="LogoContainer">
           <img
