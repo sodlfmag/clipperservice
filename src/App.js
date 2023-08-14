@@ -25,7 +25,7 @@ function App() {
           src={process.env.PUBLIC_URL + `/assets/MobileViewNoti.png`}
         />
         <Link to="https://clipperservice.info/">
-          <button className="MoveToShopBtn">스토어로 이동하기</button>
+          <button className="MoveToShopBtn">Go to store</button>
         </Link>
       </div>
     </BrowserRouter>
