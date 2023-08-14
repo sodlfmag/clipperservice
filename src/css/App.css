@@ -377,3 +377,33 @@ body {
 .PortfolioContentsImage {
   margin-top: 40px;
 }
+.MobileBlockImgContainer {
+  text-align: center;
+
+  justify-content: center;
+  align-items: center;
+}
+.MobileBlockImg {
+  height: 100vh;
+  position: absolute;
+  transform: translate(-50%);
+}
+.MoveToShopBtn {
+  position: absolute;
+  transform: translate(-50%);
+  justify-content: center;
+  z-index: 1;
+  object-fit: cover;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  margin-top: 75vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  outline: none;
+  font-size: 2.5vh;
+  font-family: "Questrial";
+}

@@ -15,8 +15,17 @@ import getPortfolios from "./components/SamplePortfolio";
 
 function App() {
   const portfolios = getPortfolios();
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-  return (
+  return isMobile ? (
+    <div className="MobileBlockImgContainer">
+      <img
+        className="MobileBlockImg"
+        src={process.env.PUBLIC_URL + `/assets/MobileViewNoti.png`}
+      />
+      <button className="MoveToShopBtn">스토어로 이동하기</button>
+    </div>
+  ) : (
     <BrowserRouter>
       <div className="App">
         {/* <MyHeader /> */}
