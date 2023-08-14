@@ -8,7 +8,7 @@ import MyHeader from "./components/MyHeader";
 import PortfolioPage from "./pages/PortfolioPage";
 import GalleryPage from "./pages/GalleryPage";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import AdminEditor from "./pages/AdminEditor";
 import ScrollToTop from "./components/ScrollToTop";
 import getPortfolios from "./components/SamplePortfolio";
@@ -18,13 +18,17 @@ function App() {
   const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
   return isMobile ? (
-    <div className="MobileBlockImgContainer">
-      <img
-        className="MobileBlockImg"
-        src={process.env.PUBLIC_URL + `/assets/MobileViewNoti.png`}
-      />
-      <button className="MoveToShopBtn">스토어로 이동하기</button>
-    </div>
+    <BrowserRouter>
+      <div className="MobileBlockImgContainer">
+        <img
+          className="MobileBlockImg"
+          src={process.env.PUBLIC_URL + `/assets/MobileViewNoti.png`}
+        />
+        <Link to="https://clipperservice.info/">
+          <button className="MoveToShopBtn">스토어로 이동하기</button>
+        </Link>
+      </div>
+    </BrowserRouter>
   ) : (
     <BrowserRouter>
       <div className="App">
