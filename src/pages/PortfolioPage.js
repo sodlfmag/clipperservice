@@ -7,6 +7,7 @@ import PageControlBtns from "../components/PageControlBtns";
 import parse from "html-react-parser";
 // Portfolio.js 에서 썸네일 클릭 시 해당 prop으로 portfolio 객체가 전달되어야 함.
 import { useLocation } from "react-router";
+import MyHeader from "../components/MyHeader";
 
 const PortfolioPage = (props) => {
   const index = useLocation().state.index;
@@ -48,6 +49,7 @@ const PortfolioPage = (props) => {
 
   return (
     <>
+      <MyHeader />
       <div className="PortfolioFrame">
         <div>
           <div className="PortfolioPageSub">

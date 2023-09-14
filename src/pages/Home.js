@@ -5,7 +5,7 @@ import MainHeader from "../components/MainHeader";
 
 const Home = () => {
   return (
-    <div style={{ overflow: "hidden" }}>
+    <div>
       <MainHeader />
       <div className="VideoContainer">
         <video className="VisualizerVideo" loop autoplay="" muted>
