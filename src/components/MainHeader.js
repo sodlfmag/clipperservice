@@ -12,10 +12,10 @@ const MainHeader = () => {
         />
       </NavLink>
       <div className="TabList">
-        <TabButton name="PORTFOLIO" path="/portfolio" />
-        <TabButton name="GALLERY" path="/gallery" />
+        <TabButton name="ABOUT CO." path="/aboutco" />
         <TabButton name="CONTACT" path="/contact" />
-        <TabButton name="STORE" path="https://clipperservice.info/" />
+        <TabButton name="PB STORE" path="https://clipperservice.info/" />
+        <TabButton name="QDS" path="https://quarterdeckstudio.com/" />
       </div>
     </header>
   );
