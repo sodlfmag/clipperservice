@@ -2,6 +2,9 @@ import TabButton from "./TabButton";
 import { NavLink } from "react-router-dom";
 
 const MainHeader = () => {
+  const handleOpenNewTab = (url) => {
+    window.open(url, "_blank", "noopener, noreferrer");
+  };
   return (
     <header className="MainHeader">
       <NavLink to={"/"}>
@@ -14,8 +17,18 @@ const MainHeader = () => {
       <div className="TabList">
         <TabButton name="ABOUT CO." path="/aboutco" />
         <TabButton name="CONTACT" path="/contact" />
-        <TabButton name="PB STORE" path="https://clipperservice.info/" />
-        <TabButton name="QDS" path="https://quarterdeckstudio.com/" />
+        <a
+          className="TabButton"
+          onClick={() => handleOpenNewTab("https://clipperservice.info")}
+        >
+          PB STORE
+        </a>
+        <a
+          className="TabButton"
+          onClick={() => handleOpenNewTab("https://quarterdeckstudio.com/")}
+        >
+          QDS
+        </a>
       </div>
     </header>
   );

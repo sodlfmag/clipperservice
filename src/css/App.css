@@ -43,6 +43,7 @@ body .Home {
   width: 50px;
   color: white;
   font-size: 2.2vhs;
+  cursor: pointer;
 }
 
 .TabList {
