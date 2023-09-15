@@ -131,34 +131,26 @@ function RequestForm(props) {
             <ToggleButton
               // type="button"
               name="clicked_category"
-              value="앨범 커버"
+              value="투자 관련"
               upperFunction={handleInputChange}
             >
-              앨범 커버
+              투자 관련
             </ToggleButton>
             <ToggleButton
               // type="button"
               name="clicked_category"
-              value="머천다이즈"
+              value="협업"
               upperFunction={handleInputChange}
             >
-              머천다이즈
+              협업
             </ToggleButton>
             <ToggleButton
               // type="button"
               name="clicked_category"
-              value="소품"
+              value="지원"
               upperFunction={handleInputChange}
             >
-              소품
-            </ToggleButton>
-            <ToggleButton
-              // type="button"
-              name="clicked_category"
-              value="콜라보"
-              upperFunction={handleInputChange}
-            >
-              콜라보
+              지원
             </ToggleButton>
             <ToggleButton
               // type="button"
@@ -209,7 +201,6 @@ function RequestForm(props) {
             전송
           </button>
         </div>
-        <ToggleButton value="샘플이다" />
       </form>
       <div style={{ marginBottom: "150px" }}></div>
       {MyFooter()}
