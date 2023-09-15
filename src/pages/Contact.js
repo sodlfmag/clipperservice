@@ -6,6 +6,7 @@ const Contact = () => {
   return (
     <>
       <MyHeader />
+      <div style={{ marginBottom: "5vh" }}></div>
       <div className="BusinessCard">
         <div className="LogoContainer">
           <img
@@ -34,7 +35,7 @@ const Contact = () => {
           <button className="RequestButton">협업 문의하기</button>
         </Link>
       </div>
-      <div style={{ marginBottom: "150px" }}></div>
+      <div style={{ marginBottom: "10vh" }}></div>
       <MyFooter />
     </>
   );

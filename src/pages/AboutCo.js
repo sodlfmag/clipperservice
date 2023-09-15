@@ -26,7 +26,8 @@ export const AboutCo = () => {
           디자인 스튜디오를 보유하고 있습니다.
         </div>
       </div>
-      {/* <MyFooter /> */}
+      <div style={{ marginBottom: "60vh" }}></div>
+      <MyFooter />
     </>
   );
 };
