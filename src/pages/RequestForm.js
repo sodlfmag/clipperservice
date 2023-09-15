@@ -207,7 +207,7 @@ function RequestForm(props) {
           </button>
         </div>
       </form>
-      <div style={{ marginBottom: "150px" }}></div>
+      <div style={{ marginBottom: "10vh" }}></div>
       {MyFooter()}
     </div>
   );

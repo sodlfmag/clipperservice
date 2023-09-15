@@ -22,6 +22,7 @@ body .Home {
   display: flex;
   font-family: "Questrial";
   width: 100vw;
+  overflow: hidden;
 }
 .MainHeader {
   color: white;
@@ -35,11 +36,13 @@ body .Home {
 }
 .LogoImage {
   margin-left: 20px;
+  width: 14.5vw;
 }
 .TabButton {
   padding: 50px;
   width: 50px;
   color: white;
+  font-size: 2.2vhs;
 }
 
 .TabList {
@@ -57,13 +60,13 @@ body .Home {
   position: absolute;
 }
 .PageTitle_name {
-  font-size: 45px;
+  font-size: 5.6vh;
   color: white;
   font-family: "Questrial";
 }
 .PageTitle_introduction {
   margin-top: 10px;
-  font-size: 23px;
+  font-size: 2.8vh;
   color: white;
   font-family: "Questrial";
 }
