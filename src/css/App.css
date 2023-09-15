@@ -431,3 +431,32 @@ body .Home {
 ::-webkit-scrollbar-track {
   background: rgba(220, 20, 60, 0.1); /*스크롤바 뒷 배경 색상*/
 }
+.AboutCoLogo {
+  position: absolute;
+  width: 25vw;
+  margin-left: 10vw;
+  margin-top: 15vh;
+}
+.v-line {
+  margin-top: 5vh;
+  border-left: solid white;
+  height: 50vh;
+  left: 50vw;
+  position: absolute;
+}
+.AboutCoContainer {
+  position: absolute;
+  margin-left: 55vw;
+  margin-top: 15vh;
+  text-align: center;
+}
+.AboutCoInfo {
+  font-size: 2.5vh;
+  color: white;
+  margin-bottom: 1vh;
+}
+.AboutCoInfoSmall {
+  font-size: 2.2vh;
+  color: white;
+  margin-bottom: 1vh;
+}
