@@ -460,3 +460,9 @@ body .Home {
   color: white;
   margin-bottom: 1vh;
 }
+/* input 태그 number 타입 arrow 없애기 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

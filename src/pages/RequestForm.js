@@ -49,7 +49,6 @@ function RequestForm(props) {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    console.log(value);
     // 카테고리 선택 시 배열에 이미 존재하는 경우 삭제, 존재하지 않는 경우 추가하는 동작
     if (name === "clicked_category") {
       if (formValues.clicked_category.includes(value)) {
@@ -93,6 +92,7 @@ function RequestForm(props) {
             placeholder="성명 (회사명)"
             value={formValues.name}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div>
@@ -107,6 +107,7 @@ function RequestForm(props) {
             placeholder="Example@company.com"
             value={formValues.email_address}
             onChange={handleInputChange}
+            required
           />
           <label htmlFor="phone_number">
             {" "}
@@ -115,12 +116,14 @@ function RequestForm(props) {
           </label>
           <input
             className={["RequestInput", "RequestInput_Phone_Number"].join(" ")}
-            type="tel"
+            type="number"
             id="phone_number"
             name="phone_number"
-            placeholder="핸드폰 번호"
+            placeholder="핸드폰 번호( - 없이)"
             value={formValues.phone_number}
             onChange={handleInputChange}
+            // placeholder="###-###-####"
+            required
           />
         </div>
         <div className="RequestCategoryContainer">
@@ -175,6 +178,7 @@ function RequestForm(props) {
             name="title"
             value={formValues.title}
             onChange={handleInputChange}
+            required
           />
         </div>
         <div>
@@ -189,6 +193,7 @@ function RequestForm(props) {
             name="contents"
             value={formValues.contents}
             onChange={handleInputChange}
+            required
           />
         </div>
         {/* EmailJs 첨부파일 업로드 유료기능이어서 삭제 */}

@@ -24,16 +24,16 @@ const StyledButton = memo(styled.button`
     background-color: ${({ isActive }) => (isActive ? "#0080F5" : "#d9d9d9")};
   }
 `);
-const ToggleButton = (props) => {
+const ToggleButton = ({ name, value, upperFunction }) => {
   const [isActive, setIsActive] = useState(false);
-
-  const handleClick = () => {
+  function handleClick() {
     setIsActive(!isActive);
-  };
+    upperFunction({ target: { name, value } });
+  }
 
   return (
     <StyledButton type="button" isActive={isActive} onClick={handleClick}>
-      {props.value}
+      {value}
     </StyledButton>
   );
 };

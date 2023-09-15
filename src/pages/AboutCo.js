@@ -1,3 +1,4 @@
+import MyFooter from "../components/MyFooter";
 import MyHeader from "../components/MyHeader";
 import PageBody from "../components/PageBody";
 export const AboutCo = () => {
@@ -25,6 +26,7 @@ export const AboutCo = () => {
           디자인 스튜디오를 보유하고 있습니다.
         </div>
       </div>
+      {/* <MyFooter /> */}
     </>
   );
 };
