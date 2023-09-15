@@ -23,11 +23,12 @@ function App() {
       <div className="MobileBlockImgContainer">
         <img
           className="MobileBlockImg"
-          src={process.env.PUBLIC_URL + `/assets/MobileViewNoti.png`}
+          src={process.env.PUBLIC_URL + `/assets/MobileViewNotification.png`}
         />
-        <Link to="https://clipperservice.info/">
+        {/* Go to Store 버튼 */}
+        {/* <Link to="https://clipperservice.info/">
           <button className="MoveToShopBtn">Go to store</button>
-        </Link>
+        </Link> */}
       </div>
     </BrowserRouter>
   ) : (
