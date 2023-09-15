@@ -16,16 +16,12 @@ const Contact = () => {
         </div>
         <div className="CorpInfoContainer">
           <div className="CorpInfo">
-            ADDRESS: 서울특별시 관악구 남부순환로 161가 길 16
+            ADDRESS: 부산광역시 수영구 강서로 35번길 10 1F
           </div>
           <div className="CorpInfo">
             BUSINESS MAIL: clipper.co.service@gmail.com
           </div>
-          <div className="CorpInfo">MOBILE: +82 10-9597-1090 (디자인실)</div>
-          <div className="CorpInfo">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            +82 10-2262-6091(기획실)
-          </div>
+          <div className="CorpInfo">MOBILE: +82 10-2262-6091 (대표번호)</div>
           <div className="CorpInfo">FAX: 0504-494-1090</div>
         </div>
       </div>
